@@ -23,4 +23,8 @@ extension Coordinator {
         childCoordinators.append(coordinator)
         coordinator.start()
     }
+    
+    func finishModal() {
+        //use child did stop to remove memory reference when dismissin
+    }
 }

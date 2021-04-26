@@ -8,7 +8,7 @@
 import UIKit
 
 protocol HomeCoordinatorProtocol: Coordinator {
-    func navigateToCharacter() // Example of further navigation
+    func navigateToCharacter(_ character: BBCharacter) // Example of further navigation
 }
 
 final class HomeCoordinator: HomeCoordinatorProtocol {
@@ -32,7 +32,8 @@ final class HomeCoordinator: HomeCoordinatorProtocol {
     }
 
     // Example: Navigate to another coordinator
-    func navigateToCharacter() {
-
+    func navigateToCharacter(_ character: BBCharacter) {
+        let coordinator = DetailedCoordinator(navigationController: navigationController, parent: self, character: character)
+        coordinator.start()
     }
 }
