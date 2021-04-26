@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DetailedViewController.swift
 //  GAN
 //
 //  Created by Tom on 26/04/2021.
@@ -7,13 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+final class DetailedViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .yellow
     }
-
-
 }
-
